@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Botón en CSS</title>
+
+
+  <script type="text/javascript"></script>
+
+
+  <style type="text/css">
+
+		.miBoton {
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f0f0f0), color-stop(1, #dedede));
+			background:-moz-linear-gradient(top, #f0f0f0 5%, #dedede 100%);
+			background:-webkit-linear-gradient(top, #f0f0f0 5%, #dedede 100%);
+			background:-o-linear-gradient(top, #f0f0f0 5%, #dedede 100%);
+			background:-ms-linear-gradient(top, #f0f0f0 5%, #dedede 100%);
+			background:linear-gradient(to bottom, #f0f0f0 5%, #dedede 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#dedede',GradientType=0);
+			background-color:#f0f0f0;
+			-moz-border-radius:12px;
+			-webkit-border-radius:12px;
+			border-radius:12px;
+			border:1px solid #a1a1a1;
+			display:inline-block;
+			cursor:pointer;
+			color:#000000;
+			font-family:Courier New;
+			font-size:19px;
+			padding:15px 47px;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #b5b5b5;
+		}
+		.miBoton:hover {
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dedede), color-stop(1, #f0f0f0));
+			background:-moz-linear-gradient(top, #dedede 5%, #f0f0f0 100%);
+			background:-webkit-linear-gradient(top, #dedede 5%, #f0f0f0 100%);
+			background:-o-linear-gradient(top, #dedede 5%, #f0f0f0 100%);
+			background:-ms-linear-gradient(top, #dedede 5%, #f0f0f0 100%);
+			background:linear-gradient(to bottom, #dedede 5%, #f0f0f0 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dedede', endColorstr='#f0f0f0',GradientType=0);
+			background-color:#dedede;
+		}
+		.miBoton:active {
+			position:relative;
+			top:1px;
+		}
+
+
+		.selector {
+		  border: 1px solid #ccc;
+		  width: 140px;
+		  margin: 50px auto 10px;
+		  overflow: hidden;
+		  background: #fff url("arrowdown.gif") no-repeat 90% center;
+		}
+		.selector select {
+		    padding: 5px 8px;
+		    width: 130%;
+		    border: none;
+		    box-shadow: none;
+		    background-color: transparent;
+		    background-image: none;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none;
+		}
+
+
+	</style>
+
+
+</head>
+
+    
+    <body>
+	
+		<a href="#" class="miBoton">Botón</a>
+		<div class="selector">
+            <select name="Provincia" data-placeholder="Seleccione provincia" tabindex="-1" aria-hidden="true">
+              <option value="" >Seleccione provincia</option>
+                                <option value="Álava"      >Álava</option>
+                                <option value="Albacete"   >Albacete</option>
+              </select>
+        </div>
+    </body>
+    
+</html>
+        
