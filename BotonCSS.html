@@ -72,6 +72,35 @@
 		}
 
 
+		.boton_click {
+		    text-decoration: none;
+		    -webkit-box-flex: 1;
+		    -ms-flex: 1 1 auto;
+		    flex: 1 1 auto;
+		    margin: 10px;
+		    padding: 20px;
+		    border: 2px solid #34C3F5;
+		    text-align: center;
+		    text-transform: uppercase;
+		    position: relative;
+		    overflow: hidden;
+		    -webkit-transition: .3s;
+		    transition: .3s;
+		}
+
+		.boton_click:after {
+		    text-decoration: none;
+		    position: absolute;
+		    -webkit-transition: .3s;
+		    transition: .3s;
+		    content: '';
+		    width: 0;
+		    left: 50%;
+		    bottom: 0;
+		    height: 3px;
+		    background: #34C3F5;
+		}
+
 	</style>
 
 
@@ -87,6 +116,9 @@
                                 <option value="Álava"      >Álava</option>
                                 <option value="Albacete"   >Albacete</option>
               </select>
+        </div>
+        <div >
+            <a class="boton_click" href="http://vinkula.com" style="color:#34C3F5";>Ir al apartado</a>
         </div>
     </body>
     
